@@ -31,6 +31,7 @@
     border-right: 1px solid #DDDDDD;
     display: inline-block;
     vertical-align: top;
+    position: relative;
 }
 
 .amenities {
@@ -38,6 +39,7 @@
     width: 25%;
     display: inline-block;
     vertical-align: top;
+    position: relative;
 }
 
 .locations h3,
@@ -60,15 +62,60 @@
     margin-top: 0;
 }
 
-.popover {
+.amenities .popover {
     color: #484848;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: #FAFAFA;
     border: 1px solid #DDDDDD;
+    position: absolute;
+    width: 100%;
+    height: 200%;
     border-radius: 4px;
     display: none;
+    top: 100%;
+    left: 0;
+    margin-left: -4px;
+    padding-left: 4px;
+    align-items: center;
+    z-index: 1; 
 }
 
+.locations .popover {
+    color: #484848;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    position: absolute;
+    border-radius: 4px;
+    display: none;
+    width: 100%;
+    height: 300%;
+    top: 100%;
+    left: 0;
+    margin-left: -1px;
+}
+
+.locations:hover .popover,
 .amenities:hover .popover {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.locations .popover h2 {
+    font-size: 16px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-left: -20px;
+}
+
+.locations .nested-list {
+    margin-left: -40px;
+    padding-bottom: 20px;
 }
 
 ul {
