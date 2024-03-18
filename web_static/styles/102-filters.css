@@ -23,9 +23,9 @@
 
 @media screen and (max-width: 767px) {
     .filters .search-button {
-        width: 100%; /* search button full width on smaller screens */
-        margin-top: 15px; /* Adjust margin top for spacing */
-        float: none; /* Remove float for center alignment */
+        width: 100%;
+        margin-top: 15px;
+        float: none;
     }
 }
 
